@@ -42,8 +42,12 @@ table tr{
 
 .tables{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(40vw,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
     padding:8px;
+}
+
+th{
+    font-size: 1.8rem;
 }
 
 tr{
@@ -84,10 +88,6 @@ input[type='file']{
 .file-upload{
     margin-top: 5vh;
 }
-.container{
-    width: 100vw;
-    height: 100vh;
-}
 
 .uploadCss{
     margin:4px;
@@ -106,9 +106,9 @@ input[type='file']{
 .positionBelow{
     display: flex;
     flex-flow: column nowrap;
-    position: fixed;
+    /* position: fixed;
     bottom:0;
-    left:0;
+    left:0; */
     justify-content: center;
     align-items: center;
     width:100vw;

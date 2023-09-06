@@ -1,0 +1,29 @@
+.blurred-carousel-container {
+    position: relative;
+    background: url('your-blurred-background-image.jpg');
+    background-size: cover;
+    background-blur: 10px; /* Apply background blur */
+    height: 300px; /* Adjust the height as needed */
+  }
+  
+  .carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  }
+  
+  /* Styles for navigation dots (optional) */
+  .slick-dots {
+    bottom: 20px;
+    li {
+      button {
+        font-size: 12px;
+        &::before {
+          color: #fff; /* Color of the dots */
+        }
+      }
+    }
+  }
+  

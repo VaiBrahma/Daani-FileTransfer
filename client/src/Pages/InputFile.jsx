@@ -25,16 +25,11 @@ function FileSorter() {
   return (
     <div className='flex'>
 
-      <form action="/upload" method="post" encType="multipart/form-data">
+      <form className='flex' action="/upload" method="post" encType="multipart/form-data">
         <label htmlFor="file-upload" className='file-upload return circularButton'>Select Files</label>
         <input id='file-upload' type="file" multiple onChange={handleFileChange} />
-        <div className="positionBelow">
-          <input type="submit" value="Upload File" className='btn circularButton return uploadCss'/>
-          <Link to='/' className='return circularButton uploadCss'>Return</Link>
-        </div>
-      </form>
 
-      <div className="container">
+        <div className="container">
         <div className="tables">
           {Object.keys(files).map((fileType) => (
               <table className={fileType}>
@@ -51,6 +46,12 @@ function FileSorter() {
         </div>
         
       </div>
+
+        <div className="positionBelow">
+          <input type="submit" value="Send" className='btn circularButton return uploadCss'/>
+        </div>
+          <Link to='/' className='return circularButton uploadCss'>Return</Link>
+      </form>
       
     </div>
   );
