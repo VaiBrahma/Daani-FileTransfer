@@ -86,7 +86,13 @@ input[type='file']{
 }
 
 .file-upload{
-    margin-top: 5vh;
+    margin-top: 0;
+    z-index: 0;
+    width: 100vw;
+    height: 11rem;
+    cursor: pointer;
+    font-size: 1rem;
+
 }
 
 .uploadCss{
@@ -115,4 +121,18 @@ input[type='file']{
 }
 .btn{
     border:none;
+}
+.top-right{
+    position: fixed;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 10px;
+    position:absolute;
+    right: 1rem;
+    top:1rem;
+}
+
+.top-right2{
+    transition:all 0.5s ease-in-out;
+    top:6rem;
 }

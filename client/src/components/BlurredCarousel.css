@@ -1,29 +1,57 @@
-.blurred-carousel-container {
+.auto-carousel-container {
     position: relative;
-    background: url('your-blurred-background-image.jpg');
-    background-size: cover;
-    background-blur: 10px; /* Apply background blur */
-    height: 300px; /* Adjust the height as needed */
+    background-color: #fff; /* White background */
+     /* Adjust the height as needed */
+    margin:auto;
+    /* border:2px solid; */
+    width:400px;
+    height:10rem;
+
   }
   
   .carousel-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    /* background-color: #f3f3f3; */
+    height: 10rem;
+    text-align: center;
+
   }
   
   /* Styles for navigation dots (optional) */
   .slick-dots {
-    bottom: 20px;
     li {
+
       button {
         font-size: 12px;
         &::before {
-          color: #fff; /* Color of the dots */
+          color: #000; /* Color of the dots */
         }
       }
     }
   }
+
+    .card{
+      background: white;
+      height: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      box-shadow: 0 0 8px #888;
+      border-radius: 10px;
+      width:300px;
+      color: #1f1f1f;;
+      margin-top: 8px;
+      font-weight: bold;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .card h2{
+      font-family: 'Poppins', sans-serif;
+      color: #f9462b;
+    }
+ 
   

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import {Link} from "react-router-dom"
 import './SendRecieve.css'
+import BlurredCarousel from './BlurredCarousel';
+
 export default function SendRecieve({onButtonClick}) {
 
     const [flag,setFlag] = useState(0);
@@ -45,6 +47,8 @@ export default function SendRecieve({onButtonClick}) {
                 </div> */}
             </div>
         </div>
+            <BlurredCarousel/>
+
     </div>
   )
 }
