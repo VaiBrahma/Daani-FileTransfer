@@ -34,7 +34,7 @@ function FileSorter() {
   return (
     <div className='flex'>
 
-      <form className='flex' action="http://10.81.36.117:7883/api/upload" method="post" encType="multipart/form-data">
+      <form className='flex' action="http://10.81.36.117:7883/api/upload" method="get" encType="multipart/form-data">
         <label htmlFor="file-upload" className='file-upload return circularButton'>Select Files</label>
         <input id='file-upload' type="file" multiple onChange={handleFileChange} onClick={onclick}/>
 

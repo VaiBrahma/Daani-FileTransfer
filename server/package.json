@@ -20,6 +20,7 @@
     "ftps": "^1.2.0",
     "mongoose": "^7.5.0",
     "multer": "^1.4.5-lts.1",
+    "multer-sftp": "^1.1.1",
     "path": "^0.12.7",
     "socket.io": "^4.7.2",
     "ssh2-sftp-client": "^9.1.0"
