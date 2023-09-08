@@ -12,6 +12,7 @@
   "author": "Vaibhav Singh",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "axios": "^1.5.0",
     "cors": "^2.8.5",
     "dns": "^0.2.2",
@@ -23,6 +24,10 @@
     "multer-sftp": "^1.1.1",
     "path": "^0.12.7",
     "socket.io": "^4.7.2",
+=======
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+>>>>>>> old_daani/main
     "ssh2-sftp-client": "^9.1.0"
   },
   "devDependencies": {

@@ -1,14 +1,19 @@
 import React, { useState } from 'react'
+<<<<<<< HEAD
 import {Link} from "react-router-dom"
 import './SendRecieve.css'
 import BlurredCarousel from './BlurredCarousel';
 
+=======
+import './SendRecieve.css'
+>>>>>>> old_daani/main
 export default function SendRecieve({onButtonClick}) {
 
     const [flag,setFlag] = useState(0);
     const [flagg,setFlagg] = useState(0);
     const onClick = ()=>{
         setFlag(!flag);
+<<<<<<< HEAD
         fetch('/getServerURL') // Replace with your endpoint to retrieve the server's URL
         .then(response => response.json())
         .then(data => {
@@ -21,6 +26,8 @@ export default function SendRecieve({onButtonClick}) {
           }
         })
         .catch(error => console.error('Error fetching server URL:', error));
+=======
+>>>>>>> old_daani/main
     }
     const onClickk = ()=>{
         setFlagg(!flagg);
@@ -31,6 +38,7 @@ export default function SendRecieve({onButtonClick}) {
     <div>
         <div className="initialButton">
             <div className="popUp">
+<<<<<<< HEAD
                 <div className="circularButton" onClick={onClick}><Link to='input-file' className='link'>Send</Link></div>
                 {/* <div className={`element`}>
                     <div className={`viaWhat left ${flag?'open':'close'} `} onClick={onButtonClick}><Link to = 'input-file'>via LAN</Link></div>
@@ -49,6 +57,24 @@ export default function SendRecieve({onButtonClick}) {
         </div>
             <BlurredCarousel/>
 
+=======
+                <div className="circularButton" onClick={onClick}>Send</div>
+                <div className={`element`}>
+                    <div className={`viaWhat ${flag?'open':'close'} `} onClick={onButtonClick}>via LAN</div>
+                    <div className={`viaWhat ${flag?'open':'close'} `}>via drive</div>
+                    <div className={`viaWhat ${flag?'open':'close'} `}>via hotspot</div>
+                </div>
+            </div>
+            <div className={`popUp ${flag?'':''}`}>
+                <div className="circularButton" onClick={onClickk}>Recieve</div>
+                <div className={`element`}>
+                    <div className={`viaWhat ${flagg?'open':'close'} `}>via LAN</div>
+                    <div className={`viaWhat ${flagg?'open':'close'} `}>via drive</div>
+                    <div className={`viaWhat ${flagg?'open':'close'} `}>via hotspot</div>
+                </div>
+            </div>
+        </div>
+>>>>>>> old_daani/main
     </div>
   )
 }

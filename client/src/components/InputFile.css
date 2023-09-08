@@ -1,0 +1,68 @@
+
+table{
+    /* border:1px solid black; */
+    border-radius:8px;
+    padding:3px;
+    margin:5px;
+    box-shadow: 0 0 8px #888;
+    padding-bottom: 5px;
+    background-color: rgba(248, 50, 50, 0.446);
+}
+
+table tr{
+    background-color: rgba(247, 22, 22, 0.423);
+}
+.image{
+    background-color: rgba(136, 50, 248, 0.446);
+}
+.image tr{
+    background-color: rgba(247, 22, 22, 0.344);
+}
+.audio{
+    background-color: rgba(248, 245, 50, 0.446);
+}
+.audio tr{
+    background-color: rgba(249, 37, 37, 0.27);
+}
+.application{
+    background-color: rgba(42, 255, 127, 0.209);
+} 
+.application tr{
+    background-color: rgba(41, 185, 41, 0.296);
+}
+
+.flex{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.tables{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    border: 2px solid;
+    padding:8px;
+}
+
+tr{
+
+    transition: all 0.4s ease-in-out;
+    outline: 0.01px solid rgba(255, 240, 78, 0.674);
+}
+tr:hover{
+    background-color:rgba(238, 255, 0, 0.006);
+}
+tr:active{
+    transition: all 1.4s ease-in;
+    outline: 100vh solid rgba(20, 1, 1, 0.209);
+    outline-offset: 4px;
+    
+
+
+}

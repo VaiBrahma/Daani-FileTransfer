@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require('express');
 const lanIP = require('./lanip');
 const getWifiIp = require('./wifiip');
@@ -69,4 +70,16 @@ app.get('/api/lanIP', (req, res) => {
 
 app.listen(port, hostt, ()=>{
     console.log(`server listened at http://${hostt}:${port}`)
+=======
+const express = require('express')
+const app = express()
+
+app.use('/',(req,res)=>{
+    res.send('hello world')
+})
+
+
+app.listen(80,()=>{
+    console.log('server is listened')
+>>>>>>> old_daani/main
 })

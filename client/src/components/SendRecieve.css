@@ -8,7 +8,11 @@
     align-items: center;
     flex-wrap: wrap;
     transition: all 0.5s ease-in-out; 
+<<<<<<< HEAD
     margin-top: 20vh;
+=======
+    margin-top: 33vh;
+>>>>>>> old_daani/main
 }
 
 .circularButton{
@@ -25,7 +29,10 @@
     z-index: 1;
     transition: all 0.5s ease-in-out; 
     outline: 8px solid rgb(0, 145, 255);
+<<<<<<< HEAD
     margin:2rem;
+=======
+>>>>>>> old_daani/main
 }
 
 .circularButton:active, .viaWhat:active{
@@ -37,7 +44,11 @@
 }
 
 .viaWhat{
+<<<<<<< HEAD
     background-color: #f3f3f3;
+=======
+    background-color: white;
+>>>>>>> old_daani/main
     width: 60px;
     padding: 8px;
     border-radius: 30%;
@@ -86,6 +97,7 @@
     margin: 0;
     padding: 0;
 }
+<<<<<<< HEAD
 
 .left{
     position:relative;
@@ -107,3 +119,5 @@
     justify-content: center;
     align-items: center;
 }
+=======
+>>>>>>> old_daani/main

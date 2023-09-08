@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+<<<<<<< HEAD
 const mongoURI = 'mongodb://localhost:27017/'
 
 const connectToMongo = ()=>{
@@ -6,3 +7,7 @@ const connectToMongo = ()=>{
 }
 
 module.exports = connectToMongo;
+=======
+
+mongoose.connect('mongodb://localhost:27017');
+>>>>>>> old_daani/main
